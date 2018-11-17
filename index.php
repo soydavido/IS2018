@@ -9,9 +9,10 @@
     <meta name="author" content="">
 
     <title>Stellar - Inicio</title>
+    <link rel="shortcut icon" href="pics/stellar-rocket-300.png">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
@@ -146,7 +147,7 @@
           <p>En caso de duda, contactanos.</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="contact.php">Contactanos</a>
+          <a class="btn btn-lg btn-secondary btn-block" href="#">Contactanos</a>
         </div>
       </div>
 

@@ -1,7 +1,3 @@
-Proyecto Ingenieria del Software 201825	
+Proyecto Ingenieria del Software 201825
 
-Autores:
-Ortuño David.
-Ramirez Daniel.
-Pimentel Siul.
-
+Autores: Ortuño David. Ramirez Daniel. Pimentel Siul.
