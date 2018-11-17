@@ -9,9 +9,10 @@
     <meta name="author" content="">
 
     <title>Stellar - Inicio de Sesion</title>
+    <link rel="shortcut icon" href="pics/stellar-rocket-300.png">
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
@@ -23,7 +24,7 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Stellar</a>
+        <a class="navbar-brand" href="index.php">Stellar</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,45 +60,53 @@
         <div class="col-lg-4 mb-5">
           <div class="card h-100">
             <h4 class="card-header" width=100 height=200 >Inicio de sesion</h4> </br>
-            <form>
-              <label for="nombreDeUsuario">Nombre de usuario</label>
-              <input type="text" name="getNombreDeUsuario" id="nombreDeUsuario">
-            </form>
-            <form>
-              <label for="contrasenha">Contraseña</label>
-              <input type="password" name="getContrasenha" id="contrasenha">
-            </form>
-          </div>
-        </div>
+              <form>
+               <div>
+                 <label for="nombreDeUsuario">Nombre de usuario</label>
+                 <input type="text" name="getNombreDeUsuario" id="nombreDeUsuario">
+               </div>
+               <div>
+                 <label for="contrasenha">Contraseña</label>
+                 <input type="password" name="getContrasenha" id="contrasenha">
+               </div>
+               <div class="col-md-4">
+                  <a class="btn btn-lg btn-secondary btn-block boton" href="#">Iniciar</a>
+               </div>
+              </form>
+            </div>
+           </div>
         <div class="col-lg-5 mb-5">
           <div class="card h-100">
             <h4 class="card-header">Registro</h4>
-            <div class="card-body">
-              <form>
+            <form class="card-body">
+            <div>
               <label for="nombreDeUsuario">Nombre </label>
-              <input type="text" name="getNombreDeUsuario" id="nombreDeUsuario">
-            </form>
-            <form>
-              <label for="nombreDeUsuario">Apellido</label>
-              <input type="text" name="getNombreDeUsuario" id="nombreDeUsuario">
-            </form>
-            <form>
-              <label for="nombreDeUsuario">Correo</label>
-              <input type="text" name="getNombreDeUsuario" id="nombreDeUsuario">
-            </form>
-            <form>
-              <label for="contrasenha1">Contraseña</label>
-              <input type="password" name="contrasenha1" id="contrasenha1">
-            </form>
-            <form>
-              <label for="contrasenha2">Validar contraseña</label>
-              <input type="password" name="contrasenha2" id="contrasenha2">
-            </form>
-            <form>
-              <label for="fechaNac">Fecha de Nacimiento</label>
-              <input type="date" name="fechaNac" id="fechaNac">
-            </form>
+              <input type="text" name="getNombreDeUsuario" id="nombreRegistro">
             </div>
+            <div>
+              <label for="nombreDeUsuario">Apellido</label>
+              <input type="text" name="getNombreDeUsuario" id="apellidoRegistro">
+            </div>
+            <div>
+              <label for="nombreDeUsuario">Correo</label>
+              <input type="text" name="getNombreDeUsuario" id="correoRegistro">
+            </div>
+            <div>
+              <label for="contrasenha1">Contraseña</label>
+              <input type="password" name="contrasenha1" id="contrasenhaRegistro">
+            </div>
+            <div>
+              <label for="contrasenha2">Validar contraseña</label>
+              <input type="password" name="contrasenha2" id="contrasenhaRegistro2">
+            </div>
+            <div>
+              <label for="fechaNac">Fecha de Nacimiento</label>
+              <input type="date" name="fechaNac" id="fechaNacRegistro">
+            </div>
+            <div class="col-md-4">
+                  <a class="btn btn-lg btn-secondary btn-block boton" href="#">Registrar</a>
+              </div>
+           </form>
           </div>
         </div>
       </div>
@@ -115,7 +124,7 @@
           <p>En caso de duda, contactanos.</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="contact.php">Contactanos</a>
+          <a class="btn btn-lg btn-secondary btn-block" href="#">Contactanos</a>
         </div>
       </div>
 
