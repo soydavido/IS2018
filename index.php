@@ -147,7 +147,7 @@
           <p>En caso de duda, contactanos.</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Contactanos</a>
+          <a class="btn btn-lg btn-secondary btn-block" href="index.php">Contactanos</a>
         </div>
       </div>
 
