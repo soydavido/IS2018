@@ -21,6 +21,7 @@ if (count($errores) == 0) {
   	  $_SESSION['correo'] = $usuario['correo'];
   	  echo 'Inicio de sesion satisfactorio';
   	}else {
+		echo 'Usuario y/o contraseña incorrectos';
   		array_push($errors, "Error, correo o contraseña erroneos");
   	}
   }
