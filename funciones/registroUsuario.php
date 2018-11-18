@@ -26,12 +26,12 @@ if(empty($correo)){
 	array_push($errores,"Correo no puede estar vacio");
 }
 
-if (filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+/*if (filter_var($correo, FILTER_VALIDATE_EMAIL)) {
      echo "Esta direccion de Correo es invalida";  
  }
  else{
  	echo "Esta dirección de correo ".($correo)." es válida.";
- }
+ } */
 
 if(empty($contrasenha)){
 	array_push($errores,"Contraseña no puede estar vacio");
@@ -51,7 +51,7 @@ if($contrasenha!=$contrasenha2){
 
 //                  Registro de Usuario
 if(count($errores) == 0){
-	 $usuario = "INSERT INTO usuario(nombre, apellido, correo, contrasenha, fechaNac ) VALUES ('$nombre', '$apellido', $'correo', '$contrasenha', '$fecha') ";
+	 $usuario = "INSERT INTO usuario(nombre, apellido, correo, contrasenha, fechaNac ) VALUES ('$nombre', '$apellido', '$correo', '$contrasenha', '$fecha') ";
      $alertas = pg_query($usuario); 
     if(!$alertas){
       echo "Ocurrio un error= " .  pg_last_error();
