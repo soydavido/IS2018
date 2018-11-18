@@ -48,6 +48,23 @@ if((count($validacionFecha)==3) and (checkdate($validacionFecha[0],$validacionFe
 if($contrasenha!=$contrasenha2){
 	array_push($errores, "Las contraseñas no coinciden");
 } 
+else{
+	if(strlen($contrasenha) < 8){
+     array_push($errores,"La clave debe tener al menos 6 caracteres");
+   }
+   if(strlen($contrasenha) > 16){
+      array_push($errores,"La clave no puede tener más de 16 caracteres");
+   }
+   if (!preg_match('`[a-z]`',$contrasenha)){
+      array_push($errores,"La clave debe tener al menos una letra minúscula");
+   }
+   if (!preg_match('`[A-Z]`',$contrasenha)){
+      array_push($errores,"La clave debe tener al menos una letra mayúscula");
+   }
+   if (!preg_match('`[0-9]`',$contrasenha)){
+      array_push($errores,"La clave debe tener al menos un caracter numérico");
+   }
+} 
 
 //                  Registro de Usuario
 if(count($errores) == 0){
@@ -61,7 +78,8 @@ if(count($errores) == 0){
 else{
 	echo 'No se pudo registrar       '; 
 	foreach ($errores as $key => $value) {
-		echo $errores[$key];
+		?><html></br></html> <?php
+		echo $errores[$key]; 
 	}
 }
 
