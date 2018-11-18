@@ -1,5 +1,5 @@
 <?php 
-//$canal=pg_connect("host='ec2-50-19-249-121.compute-1.amazonaws.com' dbname='daelhojd6ki8ok' port=5432 user='cldhqhqnxxwdcs' password='36ee4401ef33f87cbdd7b865a527cf65ec27607b0cac83778d82e62ce3726396'"); 
+$canal=pg_connect("host='ec2-50-19-249-121.compute-1.amazonaws.com' dbname='daelhojd6ki8ok' port=5432 user='cldhqhqnxxwdcs' password='36ee4401ef33f87cbdd7b865a527cf65ec27607b0cac83778d82e62ce3726396'"); 
 
 
   $nombre =  $_POST["nombreRegistro"];
@@ -45,21 +45,20 @@ if((count($validacionFecha)==3) and (checkdate($validacionFecha[0],$validacionFe
 	array_push($errores,"Debe colocar alguna fecha valida");
 } 
 
-
-//if(strcmp($contrasenhaRegistro,$contrasenhaRegistro2)){
-//	array_push($errores, "Las contraseñas no coinciden");
-//}
-
+if($contrasenha!=$contrasenha2){
+	array_push($errores, "Las contraseñas no coinciden");
+} 
 
 //                  Registro de Usuario
 if(count($errores) == 0){
 	 $usuario = "INSERT INTO usuario(nombre, apellido, correo, contrasenha, fechaNac ) VALUES ('$nombre', '$apellido', $'correo', '$contrasenha', '$fecha') ";
-//     $alertas = pg_query($usuario); 
-//    if(!$alertas){
-//      echo "Ocurrio un error= " .  pg_last_error();
-//    }
+     $alertas = pg_query($usuario); 
+    if(!$alertas){
+      echo "Ocurrio un error= " .  pg_last_error();
+    }
 }
 else{
+	echo 'No se pudo registrar       '; 
 	foreach ($errores as $key => $value) {
 		echo $errores[$key];
 	}
@@ -76,7 +75,7 @@ else{
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stellar - Registro Satisfactorio</title>
+    <title>Stellar - Registro</title>
     <link rel="shortcut icon" href="pics/stellar-rocket-300.png">
 
     <!-- Bootstrap core CSS -->

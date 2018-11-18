@@ -60,7 +60,7 @@
         <div class="col-lg-4 mb-5">
           <div class="card h-100">
             <h4 class="card-header" width=100 height=200 >Inicio de sesion</h4> </br>
-              <form>
+              <form action="funciones/login.php" method="POST">
                <div>
                  <label for="nombreDeUsuario">Correo</label>
                  <input type="text" name="correoIniciar" id="correoIniciar">
@@ -70,7 +70,7 @@
                  <input type="password" name="contrasenhaIniciar" id="contrasenhaIniciar">
                </div>
                <div class="col-md-4">
-                  <a class="btn btn-lg btn-secondary btn-block boton" href="#">Iniciar</a>
+                  <button type="submit" class="btn">Iniciar</button>
                </div>
               </form>
             </div>
