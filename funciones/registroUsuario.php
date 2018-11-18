@@ -51,7 +51,7 @@ if($contrasenha!=$contrasenha2){
 
 //                  Registro de Usuario
 if(count($errores) == 0){
-	 $usuario = "INSERT INTO usuario(nombre, apellido, correo, contrasenha, fechaNac ) VALUES ('$nombre', '$apellido', '$correo', '$contrasenha', '$fecha') ";
+	 $usuario = "INSERT INTO usuario(nombre, apellido, correo, contrasenha, "fechaNac" ) VALUES ('$nombre', '$apellido', '$correo', '$contrasenha', '$fecha') ";
      $alertas = pg_query($usuario); 
     if(!$alertas){
       echo "Ocurrio un error= " .  pg_last_error();
