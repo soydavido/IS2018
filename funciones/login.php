@@ -5,17 +5,25 @@ $correo= $_POST['correoRegistro'];
 $contrasenha= $_POST['contrasenhaRegistro'];
 $errores= array();
 
-if(empty($correoRegistro)){
+$canal = pg_query("SELECT * FROM usuario WHERE correo='$correo' AND contrasenha='$contrasenha'");
+
+if(empty($correo)){
 	array_push($errores,"Nombre no puede estar vacio");
 }
 
-if(empty($contrasenhaRegistro)){
+if(empty($contrasenha)){
 	array_push($errores,"Nombre no puede estar vacio");
 }
 
-if(count($errores) == 0){
-	$sql= "INSERT INTO usuario (nombre,apellido,correo,contrasenha,fechaNacRegistro)
-	VALUES ($nombreRegistro,$apellidoRegistro,$correoRegistro,contrasenhaRegistro)"
-}
+if (count($errores) == 0) {
+  	if (pg_num_rows($results) == 1) {
+  	  $usuario = pg_fetch_array($canal);
+  	  $_SESSION['correo'] = $usuario['correo'];
+  	}else {
+  		array_push($errors, "Error, correo o contraseña erroneos");
+  	}
+  }
+
+pg_close($canal);
 
 ?>

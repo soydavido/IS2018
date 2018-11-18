@@ -63,11 +63,11 @@
               <form>
                <div>
                  <label for="nombreDeUsuario">Correo</label>
-                 <input type="text" name="getNombreDeUsuario" id="nombreDeUsuario">
+                 <input type="text" name="correoIniciar" id="correoIniciar">
                </div>
                <div>
                  <label for="contrasenha">Contraseña</label>
-                 <input type="password" name="getContrasenha" id="contrasenha">
+                 <input type="password" name="contrasenhaIniciar" id="contrasenhaIniciar">
                </div>
                <div class="col-md-4">
                   <a class="btn btn-lg btn-secondary btn-block boton" href="#">Iniciar</a>
@@ -79,35 +79,33 @@
           <div class="card h-100">
             <h4 class="card-header">Registro</h4>
             <form class="card-body" action="funciones/registroUsuario.php" method="POST">
-              <div class="form-group">
                 <div>
-                  <label for="nombreRegistro" class="form-control">Nombre </label>
-                  <input type="text" class="form-control" name="nombreRegistro" id="nombreRegistro">
+                  <label for="nombreRegistro" >Nombre </label>
+                  <input type="text"  name="nombreRegistro" id="nombreRegistro">
                 </div>
                 <div>
-                  <label for="apellidoRegistro" class="form-control">Apellido</label>
-                  <input type="text" class="form-control" name="apellidoRegistro" id="apellidoRegistro">
+                  <label for="apellidoRegistro" >Apellido</label>
+                  <input type="text"  name="apellidoRegistro" id="apellidoRegistro">
                 </div>
                 <div>
-                  <label for="correoRegistro" class="form-control">Correo</label>
-                  <input type="text" class="form-control" name="correoRegistro" id="correoRegistro">
+                  <label for="correoRegistro">Correo</label>
+                  <input type="text"  name="correoRegistro" id="correoRegistro">
                 </div>
                 <div>
-                  <label for="contrasenhaRegistro" class="form-control">Contraseña</label>
-                  <input type="password" class="form-control" name="contrasenhaRegistro" id="contrasenhaRegistro">
+                  <label for="contrasenhaRegistro" pattern=".{8,15}" required" >Contraseña</label>
+                  <input type="password"  name="contrasenhaRegistro" id="contrasenhaRegistro">
                 </div>
                 <div>
-                  <label for="contrasenha2" class="form-control">Validar contraseña</label>
-                  <input type="password" class="form-control" name="contrasenhaRegistro2" id="contrasenhaRegistro2">
+                  <label for="contrasenha2">Validar contraseña</label>
+                  <input type="password" name="contrasenhaRegistro2" id="contrasenhaRegistro2">
                 </div>
                 <div>
-                  <label for="fechaNac class="form-control"">Fecha de Nacimiento</label>
-                  <input type="date" class="form-control" name="fechaNacRegistro" id="fechaNacRegistro">
+                  <label for="fechaNac">Fecha de Nacimiento</label>F
+                  <input type="date" name="fechaNacRegistro" id="fechaNacRegistro">
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-secondary btn-block boton" href="funciones/registroUsuario.php" type="submit">Registrar</a>
+                    <button type="submit" class="btn">Registrar</button>
                 </div>
-              </div>
            </form>
           </div>
         </div>
