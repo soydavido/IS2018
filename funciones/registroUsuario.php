@@ -70,6 +70,14 @@ else{
    }
 } 
 
+$restaAnho = date("Y") - $validacionFecha[0];
+$restaMes= date("m") - $validacionFecha[1];
+$restaDia = date("d") - $validacionFecha[2];
+if ($restaDia < 0 || $restaMes < 0) { $restaAnho--; }
+if($restaAnho<18){
+	array_push($errores,"No cumple con la mayoria de edad");
+}
+
 //                  Registro de Usuario
 if(count($errores) == 0){
 	 $usuario = "INSERT INTO usuario(nombre, apellido, correo, contrasenha, fecha_nacimiento ) VALUES ('$nombre', '$apellido', '$correo', '$contrasenha', '$fecha') ";
