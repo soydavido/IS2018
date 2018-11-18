@@ -38,7 +38,7 @@ pg_close($canal);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stellar - Inicio Satisfactorio</title>
+    <title>Stellar - Inicio Sesion</title>
     <link rel="shortcut icon" href="pics/stellar-rocket-300.png">
 
     <!-- Bootstrap core CSS -->
