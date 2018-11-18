@@ -53,6 +53,7 @@ if($contrasenha!=$contrasenha2){
 if(count($errores) == 0){
 	 $usuario = "INSERT INTO usuario(nombre, apellido, correo, contrasenha, fecha_nacimiento ) VALUES ('$nombre', '$apellido', '$correo', '$contrasenha', '$fecha') ";
      $alertas = pg_query($usuario); 
+     echo 'Registro Satisfactorio';
     if(!$alertas){
       echo "Ocurrio un error= " .  pg_last_error();
     }
