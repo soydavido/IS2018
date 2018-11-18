@@ -26,6 +26,10 @@ if(empty($correo)){
 	array_push($errores,"Correo no puede estar vacio");
 }
 
+if (!preg_match('`[@]`',$correo)){
+      array_push($errores,"Inserte un correo valido");
+}
+
 /*if (filter_var($correo, FILTER_VALIDATE_EMAIL)) {
      echo "Esta direccion de Correo es invalida";  
  }
