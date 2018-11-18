@@ -56,7 +56,7 @@
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Inicio</a>
+          <a href="index.php">Inicio</a>
         </li>
         <li class="breadcrumb-item active">Nosotros</li>
       </ol>

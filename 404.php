@@ -33,16 +33,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="index.php">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Nosotros</a>
+              <a class="nav-link" href="about.php">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contactanos</a>
+              <a class="nav-link" href="contact.php">Contactanos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="users.html">Iniciar Sesion</a>
+              <a class="nav-link" href="users.php">Iniciar Sesion</a>
             </li>
           </ul>
         </div>
@@ -59,7 +59,7 @@
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Inicio</a>
+          <a href="index.php">Inicio</a>
         </li>
         <li class="breadcrumb-item active">404</li>
       </ol>
@@ -69,16 +69,16 @@
         <p>La pagina que esta solicitando no existe, por favor intente con alguna de estas:</p>
         <ul>
           <li>
-            <a href="index.html">Inicio</a>
+            <a href="index.php">Inicio</a>
           </li>
           <li>
-            <a href="about.html">Nosotros</a>
+            <a href="about.php">Nosotros</a>
           </li>
           <li>
-            <a href="contact.html">Contactanos</a>
+            <a href="contact.php">Contactanos</a>
           </li>
           <li>
-            <a href="users.html">Iniciar Sesion</a>
+            <a href="users.php">Iniciar Sesion</a>
           </li>
         </ul>
       </div>
