@@ -62,7 +62,7 @@
             <h4 class="card-header" width=100 height=200 >Inicio de sesion</h4> </br>
               <form>
                <div>
-                 <label for="nombreDeUsuario">Nombre de usuario</label>
+                 <label for="nombreDeUsuario">Correo</label>
                  <input type="text" name="getNombreDeUsuario" id="nombreDeUsuario">
                </div>
                <div>
@@ -78,33 +78,35 @@
         <div class="col-lg-5 mb-5">
           <div class="card h-100">
             <h4 class="card-header">Registro</h4>
-            <form class="card-body">
-            <div>
-              <label for="nombreDeUsuario">Nombre </label>
-              <input type="text" name="getNombreDeUsuario" id="nombreRegistro">
-            </div>
-            <div>
-              <label for="nombreDeUsuario">Apellido</label>
-              <input type="text" name="getNombreDeUsuario" id="apellidoRegistro">
-            </div>
-            <div>
-              <label for="nombreDeUsuario">Correo</label>
-              <input type="text" name="getNombreDeUsuario" id="correoRegistro">
-            </div>
-            <div>
-              <label for="contrasenha1">Contraseña</label>
-              <input type="password" name="contrasenha1" id="contrasenhaRegistro">
-            </div>
-            <div>
-              <label for="contrasenha2">Validar contraseña</label>
-              <input type="password" name="contrasenha2" id="contrasenhaRegistro2">
-            </div>
-            <div>
-              <label for="fechaNac">Fecha de Nacimiento</label>
-              <input type="date" name="fechaNac" id="fechaNacRegistro">
-            </div>
-            <div class="col-md-4">
-                  <a class="btn btn-lg btn-secondary btn-block boton" href="#">Registrar</a>
+            <form class="card-body" action="funciones/registroUsuario.php" method="POST">
+              <div class="form-group">
+                <div>
+                  <label for="nombreRegistro" class="form-control">Nombre </label>
+                  <input type="text" class="form-control" name="nombreRegistro" id="nombreRegistro">
+                </div>
+                <div>
+                  <label for="apellidoRegistro" class="form-control">Apellido</label>
+                  <input type="text" class="form-control" name="apellidoRegistro" id="apellidoRegistro">
+                </div>
+                <div>
+                  <label for="correoRegistro" class="form-control">Correo</label>
+                  <input type="text" class="form-control" name="correoRegistro" id="correoRegistro">
+                </div>
+                <div>
+                  <label for="contrasenhaRegistro" class="form-control">Contraseña</label>
+                  <input type="password" class="form-control" name="contrasenhaRegistro" id="contrasenhaRegistro">
+                </div>
+                <div>
+                  <label for="contrasenha2" class="form-control">Validar contraseña</label>
+                  <input type="password" class="form-control" name="contrasenhaRegistro2" id="contrasenhaRegistro2">
+                </div>
+                <div>
+                  <label for="fechaNac class="form-control"">Fecha de Nacimiento</label>
+                  <input type="date" class="form-control" name="fechaNacRegistro" id="fechaNacRegistro">
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-secondary btn-block boton" href="funciones/registroUsuario.php" type="submit">Registrar</a>
+                </div>
               </div>
            </form>
           </div>
@@ -124,7 +126,7 @@
           <p>En caso de duda, contactanos.</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="index.php">Contactanos</a>
+          <a class="btn btn-lg btn-secondary btn-block" href="about.php">Contactanos</a>
         </div>
       </div>
 
